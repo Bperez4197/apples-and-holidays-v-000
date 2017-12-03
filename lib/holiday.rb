@@ -18,7 +18,11 @@ def second_supply_for_fourth_of_july(holiday_hash)
   #   }
   # }
   # return the second element in the 4th of July array
-  holiday_hash.values.flatten[2][1]
+  holiday_hash.each do |holidays, seasons|
+    if  seasons == :fourth_of_july
+      puts :fourth_of_july.min 
+    end
+ end
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
